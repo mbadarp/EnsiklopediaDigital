@@ -5,6 +5,7 @@ class geografis extends CI_Controller
     function __construct()
     {
         parent::__construct();
+        chek_session();
         $this->load->model('provinsi_model');
         // if($this->admin_model->isNotLogin()) redirect('login');
     }

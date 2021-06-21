@@ -2,7 +2,7 @@
 // $getUser = $this->session->userdata('session_user');
 // $getGrup = $this->session->userdata('session_grup');
 ?>
-<title><?= $title; ?></title>
+<title>Data Admin</title>
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
 <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/jquery-1.7.1.min.js"></script>
@@ -15,7 +15,7 @@
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
       <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary datatable"><?= $title; ?></h6>
+        <h6 class="m-0 font-weight-bold text-primary datatable">Data Admin</h6>
         <a href="<?php echo base_url('admin/tambah') ?>"><button class="btn btn-primary btn-sm btninsert">+ Input Data</button></a>
       </div>
       <div class="card-body">
@@ -24,10 +24,9 @@
             <thead>
               <tr>
                 <th scope="col">No.</th>
-                <th scope="col">ID Admin</th>
                 <th scope="col">Nama Admin</th>
-                <th scope="col">Email</th>
-                <th scope="col">Password</th>
+                <th scope="col">Username</th>
+                <th scope="col">Last Login</th>
                 <th scope="col">
                   <center><span>Action</span></center>
                 </th>
@@ -36,10 +35,9 @@
             <tfoot>
               <tr>
                 <th scope="col">No.</th>
-                <th scope="col">ID Admin</th>
                 <th scope="col">Nama Admin</th>
-                <th scope="col">Email</th>
-                <th scope="col">Password</th>
+                <th scope="col">Username</th>
+                <th scope="col">Last Login</th>
                 <th scope="col">
                   <center><span>Action</span></center>
                 </th>
@@ -51,10 +49,9 @@
               ?>
                 <tr>
                   <td><?php echo $no++; ?></td>
-                  <td><?php echo $baris->id_admin; ?></td>
-                  <td><?php echo $baris->nama; ?></td>
-                  <td><?php echo $baris->email; ?></td>
-                  <td><?php echo $baris->password; ?></td>
+                  <td><?php echo $baris->nama_admin; ?></td>
+                  <td><?php echo $baris->username; ?></td>
+                  <td><?php echo $baris->last_login; ?></td>
 
 
                   <td>

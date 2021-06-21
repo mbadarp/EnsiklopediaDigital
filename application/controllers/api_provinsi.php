@@ -7,7 +7,6 @@ class api_provinsi extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-
         //load model
         $this->load->model('api_model');
         //load library form validasi
