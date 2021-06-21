@@ -2,7 +2,7 @@
 // $getUser = $this->session->userdata('session_user');
 // $getGrup = $this->session->userdata('session_grup');
 ?>
-<title><?= $title; ?></title>
+<title>Tentang Aplikasi</title>
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
 <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/jquery-1.7.1.min.js"></script>

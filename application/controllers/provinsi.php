@@ -141,6 +141,27 @@ class provinsi extends CI_Controller
         $this->db->insert('tb_about', $data);
         redirect('provinsi/tentang_aplikasi');
     }
+
+    public function update_about()
+    {
+        $id_about = $this->input->post('id_about');
+        $about = $this->input->post('about');
+
+
+        $data = array(
+            'about' => $about
+
+
+        );
+
+        $where = array(
+            'id_about' => $id_about
+        );
+
+        $this->provinsi_model->update_data($where, $data, 'tb_about');
+        redirect('provinsi/tentang_aplikasi');
+    }
+
     public function edit_about($id_about)
     {
         //$where = array('id_prov' => $id_prov);

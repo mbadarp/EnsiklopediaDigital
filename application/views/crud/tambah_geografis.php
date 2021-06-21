@@ -1,3 +1,4 @@
+<title>Tambah Geografis</title>
 <div class="row">
     <div class="col-lg-7">
         <div class="p-5">

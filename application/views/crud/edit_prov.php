@@ -1,8 +1,9 @@
+<title>Edit Provinsi</title>
 <div class="row">
   <div class="col-lg-7">
     <div class="p-5">
       <div class="text-center">
-        <h1 class="h4 text-gray-900 mb-4">Edit User</h1>
+        <h1 class="h4 text-gray-900 mb-4">Edit Data Provinsi</h1>
       </div>
       <?php foreach ($prov  as $baris) { ?>
         <form class="user" action="<?php echo base_url('provinsi/update_provinsi'); ?>" method="post">

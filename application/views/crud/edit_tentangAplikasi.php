@@ -1,19 +1,20 @@
+<title>Edit Tentang Aplikasi</title>
 <div class="row">
     <div class="col-lg-7">
         <div class="p-5">
             <div class="text-center">
-                <h1 class="h4 text-gray-900 mb-4"><?= $title; ?></h1>
+                <h1 class="h4 text-gray-900 mb-4">Edit Tentang Aplikasi</h1>
             </div>
-            <?php foreach ($geo  as $baris) { ?>
+            <?php foreach ($about  as $baris) { ?>
                 <form class="user" action="<?php echo base_url('provinsi/update_about'); ?>" method="post">
 
                     <div class="form-group row">
-                        <input type="hidden" name="id_geo" value="<?php echo $baris->id_about; ?>">
+                        <input type="hidden" name="id_about" value="<?php echo $baris->id_about; ?>">
 
                     </div>
                     <div class="card-body">
                         <label>Provinsi</label>
-                        <textarea class="form-control" name="geografis"><?php echo $baris->about; ?></textarea>
+                        <textarea class="form-control" name="about"><?php echo $baris->about; ?></textarea>
                     </div>
 
 
